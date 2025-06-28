@@ -1,0 +1,24 @@
+import socket
+
+def port_scanner(target, ports):
+    print(f"Scanning {target}...")
+    for port in ports:
+        try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.settimeout(1)
+            result = sock.connect_ex((target, port))
+            if result == 0:
+                print(f"[+] Port {port} is open")
+            sock.close()
+        except Exception as e:
+            print(f"[-] Error scanning port {port}: {e}")
+
+# Example usage
+if __name__ == "__main__":
+    target_ip = "127.0.0.1"
+    common_ports = [21, 22, 23, 80, 443, 8080]
+    port_scanner(target_ip, common_ports)
+OUTPUT:
+Scanning 127.0.0.1...
+[+] Port 80 is open
+[+] Port 443 is open
