@@ -11,3 +11,32 @@ TASK3 # PENETRATION-TESTING
 #DURATION:4 WEEKS
 
 #MENTOR:NEELA SANTOSH
+
+Penetration Testing, also known as ethical hacking, is the practice of simulating cyberattacks on systems, networks, or applications to identify and fix vulnerabilities before malicious hackers can exploit them.
+Types of Penetration Testing:
+Type	Description
+Network Testing	Tests internal/external networks, firewalls, routers, etc.
+Web Application Testing	Focuses on web apps (SQLi, XSS, CSRF, etc.)
+Wireless Testing	Tests Wi-Fi protocols, access points, etc.
+Social Engineering	Simulates phishing, impersonation, etc.
+Penetration Testing Stages (Phases):
+Planning & Reconnaissance
+
+Define scope, goals, legal permissions
+Gather intel (passive/active)
+
+Scanning
+
+Discover live systems & open ports (e.g., Nmap)
+
+Identify vulnerabilities (e.g., Nessus)
+
+Gaining Access
+
+Exploit vulnerabilities (e.g., Metasploit)
+
+Escalate privileges
+
+Maintaining Access
+
+OUTPUT:
