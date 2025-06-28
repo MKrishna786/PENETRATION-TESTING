@@ -1,0 +1,16 @@
+def brute_force_login(username, wordlist, actual_password):
+    for password in wordlist:
+        print(f"Trying {username}:{password}")
+        if password == actual_password:
+            print(f"[+] Password found: {password}")
+            return
+    print("[-] Password not found in list.")
+
+# Example usage
+if __name__ == "__main__":
+    brute_force_login("admin", ["1234", "admin", "password", "letmein"], "password")
+OUTPUT:
+Trying admin:1234
+Trying admin:admin
+Trying admin:password
+[+] Password found: password
